@@ -10,8 +10,10 @@ on:
       - 'feature**'
 
 env:
-  PIPELINE_USER_ACCESS_KEY_ID: ${{ secrets.qr-code-generator-1362-pwh }}
-  PIPELINE_USER_SECRET_ACCESS_KEY: ${{ secrets.secret-qr-code-generator-1362-pwh }}
+  PIPELINE_USER_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  PIPELINE_USER_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  # PIPELINE_USER_ACCESS_KEY_ID: ${{ secrets.qr-code-generator-1362-pwh }} <- Not sure what these values are for
+  # PIPELINE_USER_SECRET_ACCESS_KEY: ${{ secrets.secret-qr-code-generator-1362-pwh }} <- Not sure what these values are for
   SAM_TEMPLATE: qr-code-sam-app/template.yaml
   TESTING_STACK_NAME: sam-app
   TESTING_PIPELINE_EXECUTION_ROLE: arn:aws:iam::204726335892:role/aws-sam-cli-managed-Dev-pipe-PipelineExecutionRole-1H63DISHUA0UN
