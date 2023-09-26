@@ -12,7 +12,7 @@ on:
 env:
   PIPELINE_USER_ACCESS_KEY_ID: ${{ secrets.qr-code-generator-1362-pwh }}
   PIPELINE_USER_SECRET_ACCESS_KEY: ${{ secrets.secret-qr-code-generator-1362-pwh }}
-  SAM_TEMPLATE: template.yaml
+  SAM_TEMPLATE: qr-code-sam-app/template.yaml
   TESTING_STACK_NAME: sam-app
   TESTING_PIPELINE_EXECUTION_ROLE: arn:aws:iam::204726335892:role/aws-sam-cli-managed-Dev-pipe-PipelineExecutionRole-1H63DISHUA0UN
   TESTING_CLOUDFORMATION_EXECUTION_ROLE: arn:aws:iam::204726335892:role/aws-sam-cli-managed-Dev-p-CloudFormationExecutionR-2W97NBTBE53G
